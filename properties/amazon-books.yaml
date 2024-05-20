@@ -1,0 +1,32 @@
+load_col:
+  inter: [ user_id, item_id, rating ]
+
+user_inter_num_interval: "[15,inf)"
+item_inter_num_interval: "[15,inf)"
+val_interval:
+  rating: "[3,inf)"
+
+gpu_id: 3
+dataset: 'amazon-books'
+filterd_datset_path: 'saved/amazon-books-dataset.pth'
+
+TopK: 5
+user_threshold: 0.8
+item_threshold: 0.8
+
+ssl_temp: 0.075
+ssl_reg: 2e-6
+info_reg: 1e-6
+alpha: 0.5
+
+betau: 0.5
+betai: 0.5
+
+#L=2
+Hu_num_clusters: 2000,1000
+Hi_num_clusters: 2000,1000
+weightp: 1.0,0.5
+
+proto_reg: 1e-7
+
+warm_up_step: 20

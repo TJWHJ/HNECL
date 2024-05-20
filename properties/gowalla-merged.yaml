@@ -1,0 +1,32 @@
+load_col:
+  inter: [ user_id, item_id ]
+
+user_inter_num_interval: "[10,inf)"
+item_inter_num_interval: "[10,inf)"
+
+gpu_id: 2
+dataset: 'gowalla-merged'
+filterd_datset_path: 'saved/gowalla-merged-dataset.pth'
+
+TopK: 5
+user_threshold: 0.8
+item_threshold: 0.8
+
+learning_rate: 1e-3
+ssl_temp: 0.075
+ssl_reg: 2e-6
+info_reg: 1e-7
+alpha: 1
+gamma: 1.05
+
+betau: 0.3
+betai: 0.3
+
+#L=2
+Hu_num_clusters: 2000,1000
+Hi_num_clusters: 2000,1000
+weightp: 1.0,0.5
+
+proto_reg: 5e-8
+
+warm_up_step: 20
