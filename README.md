@@ -10,9 +10,6 @@ We propose a novel graph contrastive learning method called HNECL for recommenda
 ## Requirements
 ```
 recbole==1.0.0
-python==3.7.7
-pytorch==1.7.1
-faiss-gpu==1.8.0
 ```
 
 ## Datasets preparation
